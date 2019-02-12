@@ -1,9 +1,9 @@
 {
 "companyName": "DefaultCompany",
 "productName": "ModulosFarmquist",
-"dataUrl": "bin.data.unityweb",
-"wasmCodeUrl": "bin.wasm.code.unityweb",
-"wasmFrameworkUrl": "bin.wasm.framework.unityweb",
+"dataUrl": "Jobao.github.io.data.unityweb",
+"wasmCodeUrl": "Jobao.github.io.wasm.code.unityweb",
+"wasmFrameworkUrl": "Jobao.github.io.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
