@@ -26,9 +26,12 @@ function Calcular(numero, numero2, operador) {
                 alert("MMM");
                 break;
         }
+        document.getElementById("tablaResultado").style.visibility = "visible";
 
     }
     else{
+        
+        document.getElementById("tablaResultado").style.visibility = "hidden";
         alert("Debe ingresar un numero valido");
     }
 
