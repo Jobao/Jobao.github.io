@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="prueba.js"></script>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    <form >
+        <p> <input type="text" name="numeroUno" id="numeroUno"></p>
+        <p><select name="operacion" id="operacion">
+            <option value="0">+</option>
+            <option value="1">-</option>
+            <option value="2">*</option>
+            <option value="3">/</option>
+        </select></p>
+
+        <p> <input type="text" name="numeroDos" id="numeroDos"></p>
+        <p><button type="button" onclick="Calcular(numeroUno.value, numeroDos.value, operacion.value)">Resultado</button></p>
+        <p>
+            <table border="1">
+                <td><label id="resultado"></label></td>
+            </table>
+        </p>
+    </form>
+
+</body>
+</html>
