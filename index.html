@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS CALCULADORA</title>
+
     <script src="prueba.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="FirestoreApp.js"></script>
+    
     <style>
         table{
           border: 1px solid black;
@@ -16,7 +21,9 @@
 </head>
 <body>
     <h1>CALCULADORA</h1>
+
     <form >
+        
         <p> <input type="text" name="numeroUno" id="numeroUno"></p>
         <p><select name="operacion" id="operacion">
             <option value="0">+</option>
