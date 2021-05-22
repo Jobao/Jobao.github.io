@@ -3,7 +3,7 @@
 
 }
 
-body{
+.body{
     background-color: aquamarine;
 }
 
@@ -38,4 +38,10 @@ fieldset{
 #dropdown{
     margin-top: 1px;
     border-radius: 0.25rem;
+}
+
+#submit{
+    height: 60px;
+    width: 60px;
+    text-shadow: 1px 1px 0.25px black;
 }
