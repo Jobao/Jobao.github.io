@@ -21,17 +21,53 @@
         <div>
             <form id="survey-form">
                 <div class="sbe">
-                    <label for="name">Ingrese su Nombre</label>
-                    <input type="text" id="name" required>
+                    <label id="name-label" for="name">Ingrese su Nombre</label>
+                    <input type="text" id="name" required placeholder="Baby Shark">
                     <br>
                 </div>
 
                 <div class="sbe">
-                    <label for="email">Ingrese su e-mail</label>
+                    <label id="email-label" for="email">Ingrese su e-mail</label>
                     <input type="email" name="email" id="email" required placeholder="example@exam.ple">
-
                     <br>
                 </div>
+                <div>
+                    <label id="number-label" for="number">Nº Telefono</label>
+                    <input type="number" name="number" id="number" min="0" max="99999999999999" placeholder="00000000000">
+                </div>
+
+                <div>
+
+                    <select name="dropdown" id="dropdown">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                    </select>
+
+                </div>
+                <fieldset>
+                    <legend>MMMM</legend>
+                    <label for="0">0000</label>
+                    <input type="radio" name="0" id="0" value="0">
+                    <br>
+                    <label for="1">1111</label>
+                    <input type="radio" name="0" id="1" value="1">
+                </fieldset>
+
+                <fieldset>
+                    <legend>SSSS</legend>
+                    <label for="a">AA</label>
+                    <input type="checkbox" name="a" id="a" value="a">
+                    <br>
+                    <label for="b">BB</label>
+                    <input type="checkbox" name="b" id="b" value="b">
+                </fieldset>
+                
+                <br>
+                <p>Comentarios !!</p>
+                <Textarea id="comments"></Textarea>
+
+                <br>
+                <input type="submit" value="Enviar" id="submit">
                 
 
                 
