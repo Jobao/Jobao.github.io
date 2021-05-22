@@ -30,3 +30,12 @@ fieldset{
     height: 100px;
     resize: none;
 }
+
+.eleccion-auto{
+    margin-bottom:2px;
+}
+
+#dropdown{
+    margin-top: 1px;
+    border-radius: 0.25rem;
+}

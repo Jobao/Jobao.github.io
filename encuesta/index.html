@@ -1,83 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encuesta</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css.css">
-</head>
-<body>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 id="title">Encuesta Automotora</h1>
+      </div>
+    </header>
     <main>
-        <div >
-            <h1 id="title" >Encuesta Automotora</h1>
-        </div>
-
+      <div class="container">
         <div>
-            <p id="description">Formulario para saber la preferencia sobre automotores</p>
+          <p id="description">
+            Formulario para saber la preferencia sobre automotores
+          </p>
         </div>
         <div>
-            <form id="survey-form">
-                <div class="sbe">
-                    <label id="name-label" for="name">Ingrese su Nombre</label>
-                    <input type="text" id="name" required placeholder="Baby Shark">
-                    <br>
-                </div>
+          <form id="survey-form">
+            <fieldset>
+              <legend>Datos Personales</legend>
+              <div class="sbe">
+                <label id="name-label" for="name">Ingrese su Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  placeholder="Baby Shark"
+                />
+                <br />
+              </div>
 
-                <div class="sbe">
-                    <label id="email-label" for="email">Ingrese su e-mail</label>
-                    <input type="email" name="email" id="email" required placeholder="example@exam.ple">
-                    <br>
-                </div>
-                <div>
-                    <label id="number-label" for="number">Nº Telefono</label>
-                    <input type="number" name="number" id="number" min="0" max="99999999999999" placeholder="00000000000">
-                </div>
+              <div class="sbe">
+                <label id="email-label" for="email">Ingrese su e-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="example@exam.ple"
+                />
+                <br />
+              </div>
+              <div class="sbe">
+                <label id="number-label" for="number">Nº Telefono</label>
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  min="0"
+                  max="99999999999999"
+                  placeholder="00000000000"
+                />
+              </div>
+            </fieldset>
+            <br />
 
-                <div>
+            <fieldset>
+              <legend>
+                Que tan probable sea que cambies o compres un 0km en este año
+              </legend>
 
-                    <select name="dropdown" id="dropdown">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                    </select>
+              <input type="radio" name="probabilidad" id="0" value="0" />
+              <label for="0">Muy problable</label>
+              <br />
 
-                </div>
-                <fieldset>
-                    <legend>MMMM</legend>
-                    <label for="0">0000</label>
-                    <input type="radio" name="0" id="0" value="0">
-                    <br>
-                    <label for="1">1111</label>
-                    <input type="radio" name="0" id="1" value="1">
-                </fieldset>
+              <input type="radio" name="probabilidad" id="1" value="1" />
+              <label for="1">Poco problable</label>
+              <br />
 
-                <fieldset>
-                    <legend>SSSS</legend>
-                    <label for="a">AA</label>
-                    <input type="checkbox" name="a" id="a" value="a">
-                    <br>
-                    <label for="b">BB</label>
-                    <input type="checkbox" name="b" id="b" value="b">
-                </fieldset>
-                
-                <br>
-                <p>Comentarios !!</p>
-                <Textarea id="comments"></Textarea>
+              <input type="radio" name="probabilidad" id="2" value="2" />
+              <label for="2"><em>Muy Improbable</em></label>
+            </fieldset>
 
-                <br>
-                <input type="submit" value="Enviar" id="submit">
-                
+            <div class="eleccion-auto">
+              <p>
+                Que vehiculo le gustaria adquirir en el presente año calendario ?
+              <p>
 
-                
-                
+              <div>
+                <select name="dropdown" id="dropdown">
+                  <option hidden selected>Selecciona una opción</option>
+                  <optgroup label="Volkwagen">
+                    <option value="0">Polo</option>
+                    <option value="1">Gol</option>
+                    <option value="2">Up</option>
+                  </optgroup>
+                  <optgroup label="Chevrolet">
+                    <option value="3">Corsa</option>
+                    <option value="4">Meriva</option>
+                    <option value="5">Celta</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <br>
 
-            </form>
+
+            <fieldset>
+              <legend>¿Cuál de las siguientes acciones realizarias al obtener tu nuevo vehículo? (Selecciona todas las que correspondan)</legend>
+              
+              <input type="checkbox" name="a" id="a" value="a" />
+              <label for="a">Revisar el kilometraje</label>
+              <br />
+              
+              <input type="checkbox" name="b" id="b" value="b" />
+              <label for="b">Revisar la carrocería</label>
+
+              <br />
+              
+              <input type="checkbox" name="c" id="c" value="c" />
+              <label for="b">Asegurarme de que el automóvil este completo (llanta de repuesto, equipo de cambio de llantas, manual del usuario, etc.)</label>
+            </fieldset>
+
+            <br />
+            <p>Comentarios !!</p>
+            <textarea id="comments"></textarea>
+
+            <br />
+            <input type="submit" value="Enviar" id="submit" />
+          </form>
         </div>
-
-
+      </div>
     </main>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+  </body>
 </html>
