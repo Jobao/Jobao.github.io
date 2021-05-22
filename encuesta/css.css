@@ -1,0 +1,16 @@
+#title{
+    text-align: center;
+
+}
+
+body{
+    background-color: aquamarine;
+}
+
+#description{
+    font: 1em lobster;
+}
+
+.sbe{
+    margin-bottom: 5px;
+}
