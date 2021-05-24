@@ -1,6 +1,30 @@
-@media (max-height: 100px){
-    body {
-        background-color: salmon;
-    }
+#plan-container{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: auto;
+    background-color: white;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
 
+#plan{
+    width: 33%;
+    height: 100%;
+    background-color: black;
+}
+
+#header{
+    position: fixed;
+    top: 1px;
+    
+
+}
+
+@media (max-height: 100px) {
+    #plan{
+        background-color: yellow;
+    }
 }
