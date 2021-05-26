@@ -1,57 +1,41 @@
-#plan-container{
+#nav-bar{
     display: flex;
     flex-direction: row;
-    height: 150px;
-    width: auto;
-    background-color: white;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    background-color: burlywood;
+    position:fixed;
+    top: 3px;
+    width: 100%;
+    height: 3vw;
+    margin-left: 30%;
+    align-items: center;
+}
+
+.nav-link{
+    width: 20%;
+    font-size: 2vw;
+    text-decoration: none;
+    color: inherit;
     
 }
 
 #header-img{
-    height:  75px;
-    width: 75px;
-}
-
-#plan{
-    width: 33%;
-    height: 100%;
-    background-color: black;
-}
-
-.cabecera{
+    width: 80px;
+    height: 80px;
     position: fixed;
-    top: 1px;
-    display:  block;
+    top: 3px;
+    left: 15px;
+    border-radius: 10%;
 }
 
-
-.nav-link{
-    margin: 10px;
-    padding: 20px;  
+#form{
+    border-style: groove;
+    position: relative;
+    top: 90px;
+    width: 220px;
+    font-size: 2vw;
 }
 
-#nav-container{
-    display: flex;
-    width:  100%;
-}
-
-#nav-div{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-li{
-    list-style-type: none;
-}
-
-@media (max-height: 100px) {
-    #plan{
-        background-color: yellow;
-    }
-}
-#container{
-    margin-top: 80px;
+#form > button{
+    background-color: lightsalmon;
+    text-align: center;
 }
