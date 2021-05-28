@@ -1,17 +1,24 @@
+body{
+    background-color: lavender;
+
+}
+
 #nav-bar{
     display: flex;
     flex-direction: row;
     background-color: burlywood;
     position:fixed;
     top: 3px;
-    width: 100%;
+    width: 80%;
     height: 3vw;
     margin-left: 30%;
+    margin-right: 25px;
     align-items: center;
+    z-index: 10;
 }
 
 .nav-link{
-    width: 20%;
+    width: 30%;
     font-size: 2vw;
     text-decoration: none;
     color: inherit;
@@ -33,9 +40,43 @@
     top: 90px;
     width: 220px;
     font-size: 2vw;
+    background-color: lightblue;
 }
 
-#form > button{
+#form > #submit{
     background-color: lightsalmon;
+    text-decoration: underline;
+    box-sizing: border-box;
+}
+
+#planes{
+    position: relative;
+    top: 115px;
+}
+
+.planes-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+#plan{
+    border:1px solid black;
+    width: 25%;
+}
+
+.plan-titulo > p{
     text-align: center;
+    background-color: gray;
+    color: black;
+    margin-top: 0px;
+    font-size: 3vw;
+}
+
+#comofunciona{
+    position: relative;
+    top: 225px;
 }

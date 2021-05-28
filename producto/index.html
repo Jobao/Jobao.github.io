@@ -13,25 +13,75 @@
   <header id="header">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFiXLsUHZsoCNAjjhSvPRqxc-5sUmY3r79103X8703AZWcnLGZY6uiTKKG3aOOsZX3-ZE&usqp=CAU  " alt="logo gps" id="header-img">
     <nav id="nav-bar">
-      <a class="nav-link"href="">Inicio</a>
-      <a class="nav-link"href="#comofunciona">Como funciona ?</a>
-      <a class="nav-link"href="#planes">Nuestros planes</a>
-      <a class="nav-link"href="#contacto">Contacto</a>
+      <a class="nav-link" href="#comofunciona">Como funciona ?</a>
+      <a class="nav-link" href="#planes">Nuestros planes</a>
+      <a class="nav-link" href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <div id="contacto">
-        <form action=" https://www.reecodecamp.com/email-submit" id="form">
+  <main id="main">
+    <section id="contacto">
+      <div>
+        <form action="https://www.reecodecamp.com/email-submit" id="form">
           <label >Contactame !!</label>
           <br>
-          <input type="email" name="email" id="email" placeholder="Ingrese email de contacto">
+          <input type="email" name="email" id="email" placeholder="Ingrese email de contacto" required>
           <br>
           <br>
-          <button type="submit"  id="submit">Contactame !!!</button>
+          <input type="submit" value="Contactame !!!" id="submit">
         </form>
       </div>
+    </section>
+
+    <section id="planes">
+      <div class="planes-container">
+        <div id="plan">
+          <span class="plan-titulo">
+            <p>Free</p>
+          </span>
+          <span class="plan-descripcion">
+            <p>
+              Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+            </p>
+          </span>
+        </div>
+
+        <div id="plan">
+          <span class="plan-titulo">
+            <p>Normal</p>
+          </span>
+          <span class="plan-descripcion">
+            <p>
+              Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+            </p>
+          </span>
+        </div>
+
+        <div id="plan">
+          <span class="plan-titulo">
+            <p>Premium</p>
+          </span>
+          <span class="plan-descripcion">
+            <p>
+              Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+            </p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="comofunciona">
+      <div id="comofunciona-descripcion">
+
+      </div>
+        <hr>
+        <br>
+      <div id="comofunciona-video">
+        <h2>Video del funcionamiento del GPS (ingles)</h2>
+        <iframe id="video" width="250" height="250" src="https://www.youtube.com/embed/FU_pY2sTwTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+      </div>
+
     </section>
   </main>
 
