@@ -126,17 +126,116 @@ else
             </pre>
             </code>
           </li>
+
+          <li>
+            <h3>While</h3>
+            <p>La instrucion while, se ejecutan en bucle, mientras cumpla la condicion</p>
+
+            <code>
+              <pre class="csharp-code">
+int i = 0;
+while(i < 10)
+{
+    Console.log(i.ToString());
+    i++;
+}
+              </pre>
+            </code>
+          </li>
+
+          <li>
+            <h3>For</h3>
+            <p>La instruccion for, es muy parecida al while, se ejecuta mientras cumpla una condicion, pero en este caso se puede declarar la variable de control</p>
+          <code>
+            <pre class="csharp-code">
+for (int i = 0; i < 3; i++)
+{
+    Console.Write(i);
+}
+            </pre>
+          </code>
+          </li>
+
+          <li>
+            <h3>ForEach</h3>
+            <p>La instruccion foreach recorre cada elemento de una conjunto de datos</p>
+            <code>
+              <pre class="csharp-code">
+var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };
+foreach (int element in fibNumbers)
+  {
+    Console.Write($"{element} ");
+  }
+
+              </pre>
+            </code>
+          </li>
         </ul>
       </section>
       <hr />
 
       <section class="main-section" id="metodos">
         <header class="section-header">metodos</header>
+        <p>Los metodos son lineas de codigo que se pueden reutilizar</p>
+        <p>Existen dos tipos de metodos</p>
+        <ul>
+          <li><h3>Ejemplo de metodo que deuvuelve un valor</h3>
+            <code>
+              <pre class="csharp-code">
+int Suma(int a, int b)
+{
+  return a + b;
+}
+              </pre>
+            </code>
+          </li>
+
+          <li>
+            <h3>Ejemplo de metodo que no devuelve valor</h3>
+        <code>
+          <pre class="csharp-code">
+int Suma(int a){
+  if(a > 10){
+    Console.log(El valor enviado es mayor a 10);
+  }
+}
+          </pre>
+        </code>
+
+          </li>
+        </ul>
+        
       </section>
       <hr />
 
       <section class="main-section" id="clase_y_objetos">
         <header class="section-header">clase y objetos</header>
+        <p>Las clases y objetos en C# tienen las siguientes propiedades (entre otras)</p>
+
+        <ul>
+          <li><p>Una variable de objeto de cierta clase no almacena los valores del objeto sino su referencia (al igual que Java)</p></li>
+          <li><p>El operador de asignación no copia los valores de un objeto, sino la referencia al mismo (al igual que Java).</p></li>
+          <li><p>Un constructor tiene el mismo nombre que su clase y es sintácticamente similar a un método.</p></li>
+          <li><p>Un constructor no devuelve ningún valor (ni siquiera void).</p></li>
+          <li><p>Al igual que los métodos, los constructores también pueden ser sobrecargados.</p></li>
+        </ul>
+
+        <h3>Como se declara una clase ??</h3>
+
+        <code>
+          <pre class="csharp-code">
+class Clase 
+{
+}
+          </pre>
+        </code>
+
+        <h3>Como se crea un objeto ??</h3>
+        <code>
+          <pre class="csharp-code">
+Clase c = new Clase();
+          </pre>
+        </code>
       </section>
       <hr />
     </main>
