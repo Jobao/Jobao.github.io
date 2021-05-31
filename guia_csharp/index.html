@@ -1,99 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
     <title>Guia C#</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="navbar">
-        <header>Documentacion</header>
-        <ul>
-            <li > <a class="nav-link" href="#historia">historia</a> </li>
-            <li > <a class="nav-link" href="#tipo_de_datos">tipo de datos</a> </li>
-            <li > <a class="nav-link" href="#instrucciones_de_control">instrucciones control</a> </li>
-            <li > <a class="nav-link" href="#metodos">metodos</a> </li>
-            <li > <a class="nav-link" href="#clase_y_objetos">clase y objetos</a> </li>
-        </ul>
+      <header>Documentacion</header>
+      <ul>
+        <li><a class="nav-link" href="#historia">historia</a></li>
+        <li><a class="nav-link" href="#tipo_de_datos">tipo de datos</a></li>
+        <li>
+          <a class="nav-link" href="#instrucciones_de_control">Instrucciones de control</a
+          >
+        </li>
+        <li><a class="nav-link" href="#metodos">metodos</a></li>
+        <li><a class="nav-link" href="#clase_y_objetos">clase y objetos</a></li>
+      </ul>
     </nav>
 
     <main id="main-doc">
-        <section class="main-section" id="historia">
-            <header>historia</header>
-            <p>"C#" (pronunciado 'si sharp' en inglés) es un lenguaje de programación multiparadigma desarrollado y estandarizado por la empresa Microsoft como parte de su plataforma .NET, que después fue aprobado como un estándar por la ECMA (ECMA-334) e ISO (ISO/IEC 23270). C# es uno de los lenguajes de programación diseñados para la infraestructura de lenguaje común.</p>
-            <p>Su sintaxis básica deriva de C/C++ y utiliza el modelo de objetos de la plataforma .NET, similar al de Java, aunque incluye mejoras derivadas de otros lenguajes.</p>
+      <section class="main-section" id="historia">
+        <header class="section-header">Historia</header>
+        <p>
+          "C#" (pronunciado 'si sharp' en inglés) es un lenguaje de programación
+          multiparadigma desarrollado y estandarizado por la empresa Microsoft
+          como parte de su plataforma .NET, que después fue aprobado como un
+          estándar por la ECMA (ECMA-334) e ISO (ISO/IEC 23270). C# es uno de
+          los lenguajes de programación diseñados para la infraestructura de
+          lenguaje común.
+        </p>
+        <p>
+          Su sintaxis básica deriva de C/C++ y utiliza el modelo de objetos de
+          la plataforma .NET, similar al de Java, aunque incluye mejoras
+          derivadas de otros lenguajes.
+        </p>
+      </section>
+      <hr />
 
-        </section>
+      <section class="main-section" id="tipo_de_datos">
+        <header class="section-header">Tipo de Datos</header>
 
-        <section class="main-section" id="tipo_de_datos">
-            <header>Tipo de Datos</header>
+        <p>
+          C# contiene veinte categorías generales de tipos de datos integrados:
+          tipos de valor y tipos de referencia. El término tipo de valor indica
+          que esos tipos contienen directamente sus valores.
+        </p>
 
-            <p>C# contiene veinte categorías generales de tipos de datos integrados: tipos de valor y tipos de referencia. El término tipo de valor indica que esos tipos contienen directamente sus valores.</p>
-            
-            <table class="tabla-datos">
-                <caption>Tipos para definir números enteros:</caption>
-                <tr>
-                    <th>Tipo</th>
-                    <th>Intervalo</th>
-                </tr>
-                <tr>
-                    <td>byte</td>
-                    <td>0 a 255</td>
-                </tr>
-                <tr>
-                    <td>sbyte</td>
-                    <td>-128 a 127</td>
-                </tr>
-                <tr>
-                    <td>short</td>
-                    <td>-32.768 a 32.767</td>
-                </tr>
-            </table>
-            <h3>Definicion de una variable del tipo entera</h3>
+        <table class="tabla-datos">
+          <caption>
+            Tipos para definir números enteros:
+          </caption>
+          <tr>
+            <th>Tipo</th>
+            <th>Intervalo</th>
+          </tr>
+          <tr>
+            <td>byte</td>
+            <td>0 a 255</td>
+          </tr>
+          <tr>
+            <td>sbyte</td>
+            <td>-128 a 127</td>
+          </tr>
+          <tr>
+            <td>short</td>
+            <td>-32.768 a 32.767</td>
+          </tr>
+        </table>
+        <h3>Definicion de una variable del tipo entera</h3>
 
-            <code class="csharp-code">byte val = 12;</code>
-            <br>
-            <code class="csharp-code">int valInt = 12;</code>
-            <hr>
+        <code class="csharp-code">byte val = 12;</code>
+        <br />
+        <code class="csharp-code">int valInt = 12;</code>
 
-            <p>C# tambien cuenta con datos del tipo caracteres</p>
-            <table>
-                <tr>
-                    <th>Tipo</th>
-                    <th>Intervalo</th>
-                </tr>
+        <p>C# tambien cuenta con datos del tipo caracteres y cadenas.</p>
+        <table class="tabla-datos">
+          <tr>
+            <th>Tipo</th>
+            <th>Intervalo</th>
+          </tr>
 
-                <tr>
-                    <td>char</td>
-                    <td>'\u0000' a '\uFFFF'</td>
-                </tr>
-            </table>
+          <tr>
+            <td>char</td>
+            <td>'\u0000' a '\uFFFF'</td>
+          </tr>
+          <tr>
+              <td>string</td>
+              <td>"Hola Mundo"</td>
+          </tr>
+        </table>
 
-            
+        <h3>Definicion de una variable del tipo char y string.</h3>
+        <code class="csharp-code">char val = 'a';</code>
+        <code class="csharp-code">string val = "Hola Mundo";</code>
+        <code></code>
+      </section>
+      <hr />
 
-            <h3>Definicion de una variable del tipo char</h3>
-            <code class="csharp-code">char val = 'a';</code>
+      <section class="main-section" id="instrucciones_de_control">
+        <header class="section-header">instrucciones de control</header>
+        <ul>
+          <li>
+            <h3>If - Else</h3>
+            <p>
+              Las instrucciones <code>if - else</code> controlan el flujo de la
+              ejecucion del codigo
+            </p>
 
-        </section>
+            <code>
+              <pre class="csharp-code">
+bool condition = true; 
 
-        <section class="main-section" id="instrucciones_de_control">
-            <header>Instrucciones de control</header>
+if (condition) 
+{ 
+    Console.WriteLine("The variable is set to true."); 
+} 
+else 
+{ 
+    Console.WriteLine("The variable is set to false."); 
+}
+            </pre>
+            </code>
+          </li>
+        </ul>
+      </section>
+      <hr />
 
-        </section>
+      <section class="main-section" id="metodos">
+        <header class="section-header">metodos</header>
+      </section>
+      <hr />
 
-        <section class="main-section" id="metodos" >
-            <header>metodos</header>
-
-        </section>
-
-        <section class="main-section" id="clase_y_objetos">
-            <header>clase y objetos</header>
-
-        </section>
-
+      <section class="main-section" id="clase_y_objetos">
+        <header class="section-header">clase y objetos</header>
+      </section>
+      <hr />
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+  </body>
 </html>
