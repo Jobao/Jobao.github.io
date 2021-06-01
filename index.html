@@ -4,13 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
     <title>Mis Webs</title>
 </head>
 <body>
-    <p><a href="./calculadora/index.html">Calculadora</a></p>
-    <p><a href="./tribute/index.html">Pagina Tributo</a></p>
-    <p><a href="./encuesta/index.html">Pagina Encuesta</a></p>
-    <p><a href="./producto/index.html">Pagina Producto</a></p>
-    <p><a href="./guia_csharp/index.html">Pagina C#</a></p>
+    <nav id="navbar">
+        <div id="nav-container">
+            <a class="nav-link"href="#welcome-section">Sobre mi</a>
+            <a class="nav-link"href="#projects">Mis Webs</a>
+            <a class="nav-link"href="">Contactame !</a>
+
+        </div>
+    </nav>
+
+    <main id="main-section">
+        <section id="welcome-section">
+
+        </section>
+
+        <section id="projects">
+            <header><h2>Mis projectos</h2></header>
+            <div id="projects-container">
+                <a class="project-tile" href="./calculadora/index.html">
+                <img src="./img/portafolio/portada_calculadora.png" alt="calculadora" class="project-img">
+                </a>
+    
+                <a class="project-tile" href="./tribute/index.html">
+                    <img src="./img/portafolio/portada_tributo.png" alt="tributo" class="project-img">
+                    </a>
+    
+                <div class="project-tile">
+                    <a  href="./encuesta/index.html">Pagina Encuesta</a>
+                </div>
+    
+                <div class="project-tile">
+                    <a href="./producto/index.html">Pagina Producto</a>
+                </div>
+                    
+                <div class="project-tile">
+                    <a href="./guia_csharp/index.html">Pagina C#</a>
+                </div>
+
+            </div>
+            
+
+        </section>
+    </main>
+    
 </body>
 </html>
