@@ -1,8 +1,20 @@
+.title{
+    font-size: 72px;
+}
+
+.subtitle{
+    font-size: 36px;
+}
+
+.center{
+    text-align: center;
+}
+
 .gradient{
     background: linear-gradient(#e66465, #9198e5);
 }
 
-#nav-container{
+#navbar{
     display: inline-flex;
     flex-direction: row;
     position: fixed;
@@ -68,4 +80,8 @@
 .project-texto:hover{
     background-color: white;
     transition-duration: 1s;
+}
+
+#welcome-section{
+    height: 100vh;
 }
