@@ -19,3 +19,7 @@ se aceptan properties con espacio, en ese caso para acceder se debe usar los ([]
 Se puede agregar nuevas properties obj.newProperty ="".
 Con delete obj.property se borra la propiedad.
 Con obj.hasOwnProperty(propName) verifica si la propiedad existe.
+
+<hr>
+
+Los objetos y arrays del tipo const son mutables, pero no se puede reasigar
